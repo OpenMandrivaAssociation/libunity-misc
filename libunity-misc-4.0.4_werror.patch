@@ -1,0 +1,16 @@
+--- libunity-misc-4.0.4/configure.ac~	2011-08-01 09:17:49.000000000 -0600
++++ libunity-misc-4.0.4/configure.ac	2011-10-31 05:25:23.093190361 -0600
+@@ -60,11 +60,11 @@
+ dnl ===========================================================================
+ 
+ if test "x$GCC" = "xyes"; then
+-  GCC_FLAGS="-g -Wall"
++  GCC_FLAGS="-g"
+ fi
+ AC_SUBST(GCC_FLAGS)
+ 
+-MAINTAINER_CFLAGS="-Werror -Wall -Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self"
++MAINTAINER_CFLAGS="-Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self"
+ AC_SUBST(MAINTAINER_CFLAGS)
+ 
+ dnl = GTK Doc Check ===========================================================
