@@ -42,6 +42,7 @@ licenses.
 %patch0 -p1
 
 %build
+autoreconf -fi
 %configure2_5x \
    --disable-static
 %make LIBS='-lm'
@@ -62,3 +63,13 @@ find %{buildroot}%{_libdir} -name "*.la" -type f -print -delete
 %{_libdir}/pkgconfig/unity-misc.pc
 %{_datadir}/gtk-doc/html/%{name}/
 
+
+
+%changelog
+* Tue Nov 01 2011 Matthew Dawkins <mattydaw@mandriva.org> 4.0.4-1
++ Revision: 708238
+- imported package libunity-misc
+
+
+* Mon Oct 31 2011 Matthew Dawkins <mdawkins@unity-linux.org> 4.0.4-1-unity2011
+- import for Unity
