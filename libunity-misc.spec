@@ -4,7 +4,7 @@
 
 Name:           libunity-misc
 Version:        4.0.4
-Release:        1
+Release:        2
 License:        GPLv2,LGPLv2.1
 Summary:        Miscellaneous differently licensed stuff for Unity
 Url:            http://launchpad.net/libunity-misc
