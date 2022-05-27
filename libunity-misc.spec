@@ -4,12 +4,12 @@
 
 Name:           libunity-misc
 Version:        4.0.4
-Release:        2
+Release:        3
 License:        GPLv2,LGPLv2.1
 Summary:        Miscellaneous differently licensed stuff for Unity
 Url:            http://launchpad.net/libunity-misc
 Group:          System/Libraries
-Source0:        %{name}-%{version}.tar.gz
+Source0:        https://launchpad.net/libunity-misc/trunk/%{version}/+download/libunity-misc-%{version}.tar.gz
 Patch0:			libunity-misc-4.0.4_werror.patch
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gtk+-3.0)
@@ -43,12 +43,12 @@ licenses.
 
 %build
 autoreconf -fi
-%configure2_5x \
+%configure \
    --disable-static
-%make LIBS='-lm'
+%make_build LIBS='-lm'
 
 %install
-%makeinstall_std
+%make_install
 find %{buildroot}%{_libdir} -name "*.la" -type f -print -delete
 
 
