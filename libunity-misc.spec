@@ -7,7 +7,7 @@ Version:        4.0.4
 Release:        3
 License:        GPLv2,LGPLv2.1
 Summary:        Miscellaneous differently licensed stuff for Unity
-Url:            http://launchpad.net/libunity-misc
+Url:            https://launchpad.net/libunity-misc
 Group:          System/Libraries
 Source0:        https://launchpad.net/libunity-misc/trunk/%{version}/+download/libunity-misc-%{version}.tar.gz
 Patch0:			libunity-misc-4.0.4_werror.patch
