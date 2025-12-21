@@ -11,6 +11,11 @@ Url:            https://launchpad.net/libunity-misc
 Group:          System/Libraries
 Source0:        https://launchpad.net/libunity-misc/trunk/%{version}/+download/libunity-misc-%{version}.tar.gz
 Patch0:			libunity-misc-4.0.4_werror.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  gtk-doc
